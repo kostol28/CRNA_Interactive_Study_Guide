@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRNA/SRNA Interactive Study Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <h1>CRNA/SRNA Gold-Standard Interactive Study Guide</h1>
+      <p>
+        Designed for rigorous nurse anesthesia preparation with high-yield physiology,
+        pharmacology, anesthesia principles, crisis response, and exam-focused quizzes.
+      </p>
+      <div class="hero__actions">
+        <button id="start-quiz">Start Daily Readiness Quiz</button>
+        <button id="review-weak-areas" class="secondary">Review Weak Areas</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" id="dashboard">
+      <h2>Performance Dashboard</h2>
+      <div class="metrics">
+        <article>
+          <h3>Questions Answered</h3>
+          <p id="metric-total">0</p>
+        </article>
+        <article>
+          <h3>Overall Accuracy</h3>
+          <p id="metric-accuracy">0%</p>
+        </article>
+        <article>
+          <h3>Mastered Topics</h3>
+          <p id="metric-mastered">0</p>
+        </article>
+        <article>
+          <h3>Current Streak</h3>
+          <p id="metric-streak">0 days</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" id="topic-library">
+      <h2>Core CRNA/SRNA Study Domains</h2>
+      <div class="topics" id="topics-container"></div>
+    </section>
+
+    <section class="card" id="flashcards">
+      <h2>Rapid Recall Flashcards</h2>
+      <p class="helper-text">Click a flashcard to flip between prompt and answer.</p>
+      <div class="flashcard-grid" id="flashcard-grid"></div>
+    </section>
+
+    <section class="card" id="quiz">
+      <h2>Adaptive Quiz Engine</h2>
+      <div id="quiz-container">
+        <p class="helper-text">Press “Start Daily Readiness Quiz” to begin.</p>
+      </div>
+    </section>
+
+    <section class="card" id="protocols">
+      <h2>Critical Event Protocol Trainer</h2>
+      <p class="helper-text">Run through common OR emergencies with sequenced response steps.</p>
+      <div class="protocol-controls">
+        <label for="protocol-select">Choose scenario:</label>
+        <select id="protocol-select"></select>
+        <button id="load-protocol">Load Scenario</button>
+      </div>
+      <ol id="protocol-steps"></ol>
+    </section>
+
+    <section class="card" id="sources">
+      <h2>Public Reference Foundation</h2>
+      <ul>
+        <li>American Association of Nurse Anesthesiology (AANA) education and practice resources</li>
+        <li>American Society of Anesthesiologists (ASA) basic monitoring standards and perioperative guidance</li>
+        <li>Open-access anesthesia pharmacology, physiology, and airway management references</li>
+        <li>CDC infection prevention and patient safety standards for perioperative settings</li>
+      </ul>
+      <p class="helper-text">
+        This tool is educational and not a substitute for program curriculum, faculty guidance,
+        or institutional protocols.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for deliberate practice, spaced repetition, and confidence under pressure.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
